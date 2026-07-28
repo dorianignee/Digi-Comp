@@ -12,7 +12,7 @@ export default defineConfig({
 			},
 
 			paths: {
-				base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+				base: process.argv.includes('dev') ? '' : `/${process.env.BASE_PATH}`
 			},
 
 			adapter: adapter({
