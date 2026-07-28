@@ -1,42 +1,10 @@
-# sv
+## Digi-Comp I Simulator
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+The Digi-Comp I was a plastic toy computer that could be used to demonstrate basic digital logic concepts. 
+It was marketed as the "first real operating computer in plastic".
+It was invented in 1963 by the company E.S.R. and paved the way for many people who became interested in computer science. 
+Many of these individuals went on to become software developers or engineers.
 
-## Creating a project
+You can download the instruction manual on [archive.org](https://archive.org/details/digicomp_i/digi-comp1-manual-c-s/).
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project
-npx sv create my-app
-```
-
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-npx sv@0.16.5 create --template minimal --types ts --install npm Digi-Comp
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Copyright © 2026 Dorian Ignee under the MIT Licence. Feel free to contribute on [GitHub](https://github.com/dorianignee/Digi-Comp).

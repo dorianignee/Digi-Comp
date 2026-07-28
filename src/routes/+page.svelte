@@ -13,7 +13,7 @@
 
 <DigiComp />
 
-<p class="footer">Built 2026 by Dorian Ignee. Feel free to contribute on <a href="https://github.com/dorianignee/Digi-Comp">GitHub</a>.</p>
+<p class="footer">Copyright © 2026 Dorian Ignee. Feel free to contribute on <a href="https://github.com/dorianignee/Digi-Comp">GitHub</a>.</p>
 
 <style>
 
