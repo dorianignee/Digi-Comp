@@ -1,5 +1,6 @@
 <script lang="ts">
   import LogicRodGroup from './LogicRodGroup.svelte';
+  import FlipFlop from './FlipFlop.svelte';
   let digiComp = $state(
     {
       height: 3,
@@ -266,7 +267,7 @@
 
     <div class="flip-flops flex-col flex-end align-items-end">
       {#each digiComp.flipFlops as value, index}
-        <button class="flip-flop" onclick={() => flipFlipFlop(index)}>{value}</button>
+        <FlipFlop onclick={() => flipFlipFlop(index)} {value}/>
       {/each}
     </div>
   </div>
@@ -323,16 +324,6 @@
 
   .align-items-end {
     align-items: flex-end;
-  }
-
-  .flip-flop {
-    width: 1.5rem;
-    height: 1.5rem;
-    border: 1px solid black;
-    background-color: white;
-    text-align: center;
-    font-size: 1.2rem;
-    box-sizing: border-box;
   }
 
   :global(.flex-item) {
