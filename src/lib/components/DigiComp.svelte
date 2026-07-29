@@ -254,7 +254,7 @@
   }
 </script>
 
-<div class="flex-row">
+<div class="digi-comp flex-row">
   <div class="front-panel flex-item flex-col gap-05">
     <div class="front-panel-settings flex-col gap-05">
       <span class="brand">DIGI-COMP I</span>
@@ -286,6 +286,7 @@
     border: 1px solid #800;
     padding: 0.5rem;
   }
+  
   .brand {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
@@ -294,7 +295,10 @@
     text-align: center;
   }
 
-
+  .digi-comp {
+    overflow: auto;
+    max-width: 80vw;
+  }
 
   .flex-col {
     display: flex;
