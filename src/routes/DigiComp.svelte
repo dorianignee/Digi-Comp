@@ -13,10 +13,10 @@
             {
               f: false,
               t: false,
-              c: false,
+              c: true,
             },
             {
-              f: false,
+              f: true,
               t: false,
               c: false,
             },
@@ -30,11 +30,11 @@
             {
               f: false,
               t: false,
-              c: false,
+              c: true,
             },
             {
               f: false,
-              t: false,
+              t: true,
               c: false,
             },
             {
@@ -55,10 +55,10 @@
             {
               f: false,
               t: false,
-              c: false,
+              c: true,
             },
             {
-              f: false,
+              f: true,
               t: false,
               c: false,
             }
@@ -72,11 +72,11 @@
             {
               f: false,
               t: false,
-              c: false,
+              c: true,
             },
             {
               f: false,
-              t: false,
+              t: true,
               c: false,
             }
           ]
@@ -86,7 +86,7 @@
           reset: [
             {
               f: false,
-              t: false,
+              t: true,
               c: false,
             },
             {
@@ -97,12 +97,12 @@
             {
               f: false,
               t: false,
-              c: false,
+              c: true,
             }
           ],
           set: [
             {
-              f: false,
+              f: true,
               t: false,
               c: false,
             },
@@ -114,7 +114,7 @@
             {
               f: false,
               t: false,
-              c: false,
+              c: true,
             }
           ]
         }
