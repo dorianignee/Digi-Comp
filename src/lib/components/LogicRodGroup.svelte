@@ -1,9 +1,25 @@
 <!--This group contains a resetting and a setting rod, as well as a dropdown menu for installing an OR gate-->
 
 <script lang="ts">
+  import type { LogicRodType, OrGateValueType } from '$lib/ts/digiComp';
   import LogicRod from './LogicRod.svelte';
   import OrGateSelection from './OrGateSelection.svelte';
-  let { resetIsTriggering, setIsTriggering, resetRodValue = $bindable(), setRodValue = $bindable(), orGateValue = $bindable(), index } = $props();
+  let { 
+    resetIsTriggering, 
+    setIsTriggering, 
+    resetRodValue = $bindable(), 
+    setRodValue = $bindable(), 
+    orGateValue = $bindable(), 
+    index 
+  }:
+  {
+    resetIsTriggering: boolean, 
+    setIsTriggering: boolean, 
+    resetRodValue: LogicRodType, 
+    setRodValue: LogicRodType, 
+    orGateValue: OrGateValueType, 
+    index: number
+  } = $props();
 </script>
 
 <div class="flex-item">

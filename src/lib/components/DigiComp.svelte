@@ -1,7 +1,9 @@
 <script lang="ts">
   import LogicRodGroup from './LogicRodGroup.svelte';
   import FlipFlop from './FlipFlop.svelte';
-  let digiComp = $state(
+  import type { DigiCompType, LogicRodGroupType, FlipFlopType } from '$lib/ts/digiComp';
+  
+  let digiComp: DigiCompType = $state(
     {
       height: 3,
       width: 3,
@@ -222,7 +224,7 @@
       digiComp.rodGroups = digiComp.rodGroups.slice(0, digiComp.width);
     }
     else if (digiComp.rodGroups.length < digiComp.width) {
-      const newRodGroups = Array.from({ length: digiComp.width - digiComp.rodGroups.length }, () => ({
+      const newRodGroups: LogicRodGroupType[] = Array.from({ length: digiComp.width - digiComp.rodGroups.length }, () => ({
         orGateValue: 'none',
         reset: Array.from({ length: digiComp.height }, () => ({ f: false, t: false, c: false })),
         set: Array.from({ length: digiComp.height }, () => ({ f: false, t: false, c: false }))
@@ -240,7 +242,7 @@
       });
     }
     else if (digiComp.flipFlops.length < digiComp.height) {
-      const newFlipFlops = Array.from({ length: digiComp.height - digiComp.flipFlops.length }, () => 0);
+      const newFlipFlops: FlipFlopType[] = Array.from({ length: digiComp.height - digiComp.flipFlops.length }, () => 0);
       digiComp.flipFlops = [...digiComp.flipFlops, ...newFlipFlops];
       digiComp.rodGroups.forEach((rodGroup) => {
         const newResetCells = Array.from({ length: digiComp.height - rodGroup.reset.length }, () => ({ f: false, t: false, c: false }));

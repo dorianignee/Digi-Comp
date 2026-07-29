@@ -1,5 +1,6 @@
 <script lang="ts">
-  let { selection = $bindable() } = $props();
+  import type { OrGateValueType } from "$lib/ts/digiComp";
+  let { selection = $bindable() }: { selection: OrGateValueType } = $props();
 </script>
 
 <select bind:value={selection} style="width: 100%;">

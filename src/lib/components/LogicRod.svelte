@@ -1,6 +1,7 @@
 <script lang="ts">
+  import type { LogicRodType } from '$lib/ts/digiComp';
   import LogicCell from './LogicCell.svelte';
-  let { isTriggering, columnSettings, index } = $props();
+  let { isTriggering, columnSettings, index }: {isTriggering: boolean, columnSettings: LogicRodType, index: number} = $props();
 </script>
 
 <div>
@@ -22,9 +23,9 @@
       </tr>
     </thead>
     <tbody>
-      {#each columnSettings as row}
+      {#each columnSettings as _, index}
       <tr>
-        <LogicCell bind:tBox={row.t} bind:fBox={row.f} bind:cBox={row.c} />
+        <LogicCell bind:cell = {columnSettings[index]} />
       </tr>
       {/each}
     </tbody>

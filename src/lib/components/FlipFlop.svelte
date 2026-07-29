@@ -1,8 +1,10 @@
 <script lang="ts">
   import { fly } from 'svelte/transition';
 	import { linear } from 'svelte/easing'
+  import type { FlipFlopType } from '$lib/ts/digiComp';
+  import type { MouseEventHandler } from 'svelte/elements';
 
-  let { value, onclick } = $props();
+  let { value, onclick }: {value: FlipFlopType, onclick: MouseEventHandler<HTMLButtonElement> | null | undefined} = $props();
 	let zeroLeft = $state('0');
 	let oneLeft = $state('-100%');
 </script>

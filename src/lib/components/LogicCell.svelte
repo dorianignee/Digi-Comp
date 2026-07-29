@@ -1,15 +1,17 @@
 <script lang="ts">
-  let { tBox = $bindable(), fBox = $bindable(), cBox = $bindable() } = $props();
+  import type { LogicCellType } from "$lib/ts/digiComp";
+
+  let { cell = $bindable() }: {cell: LogicCellType} = $props();
 </script>
 
 <td class="logic-cell">
-  <input type="checkbox" bind:checked={tBox} />
+  <input type="checkbox" bind:checked={cell.t} />
 </td>
 <td class="logic-cell mid">
-  <input type="checkbox" bind:checked={fBox} />
+  <input type="checkbox" bind:checked={cell.f} />
 </td>
 <td class="logic-cell">
-  <input type="checkbox" bind:checked={cBox} />
+  <input type="checkbox" bind:checked={cell.c} />
 </td>
 
 <style>
