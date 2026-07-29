@@ -11,7 +11,10 @@
 
 <p>You can download the instruction manual on <a href="https://archive.org/details/digicomp_i/digi-comp1-manual-c-s/">archive.org</a>.</p>
 
-<DigiComp />
+<!-- class "flex-item" will occupy the max. height, so the footer is at the bottom -->
+<div class="flex-item" style="align-self: center;">
+  <DigiComp />
+</div>
 
 <p class="footer">Copyright © 2026 Dorian Ignee. Feel free to contribute on <a href="https://github.com/dorianignee/Digi-Comp">GitHub</a>.</p>
 
