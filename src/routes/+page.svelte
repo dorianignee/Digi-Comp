@@ -1,5 +1,5 @@
 <script>
-  import DigiComp from "./DigiComp.svelte";
+  import DigiComp from "$lib/components/DigiComp.svelte";
 </script>
 
 <h1>Digi-Comp I</h1>
