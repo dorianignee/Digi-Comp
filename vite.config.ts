@@ -12,8 +12,7 @@ export default defineConfig({
 			},
 
 			paths: {
-				// base path must explicitly start with a slash, so we have to remove the first character of the BASE_PATH environment variable
-				base: process.argv.includes('dev') ? '' : `/${process.env.BASE_PATH?.substring(1)}`
+				base: process.argv.includes('dev') ? '' : `/${process.env.BASE_PATH}`
 			},
 
 			adapter: adapter({
